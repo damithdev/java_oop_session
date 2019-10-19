@@ -12,4 +12,8 @@ public class FullTimeEmployee extends Employee {
     public int calculateSalary() {
         return getPaymentPerHour() * 8;
     }
+
+    public int getPaymentPerHour(){
+        return 20;
+    }
 }

@@ -18,6 +18,8 @@ public abstract class Employee {
     }
 
     public abstract int calculateSalary();
+
+
     public String getName() {
         return name;
     }

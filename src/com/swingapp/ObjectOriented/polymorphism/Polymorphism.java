@@ -35,17 +35,26 @@ package com.swingapp.ObjectOriented.polymorphism;
 public class Polymorphism {
 
     public static void main(String[] args) {
-        // Here the runtime polymorphism fundamental is not applied, as it is of single CashPayment form
-        CashPayment c = new CashPayment();
-        c.pay();
+//        // Here the runtime polymorphism fundamental is not applied, as it is of single CashPayment form
+//        CashPayment c = new CashPayment();
+//        c.pay();
+//
+//        // Now the initialization is done using runtime polymorphism and it can have many forms at runtime
+//        // Single payment "p" instance can be used to pay by cash and credit card
+//        Payment p = new CashPayment();
+//        p.pay(); // Pay by cash
+//
+//        p = new CreditPayment();
+//        p.pay(); // Pay by creditcard
 
-        // Now the initialization is done using runtime polymorphism and it can have many forms at runtime
-        // Single payment "p" instance can be used to pay by cash and credit card
-        Payment p = new CashPayment();
-        p.pay(); // Pay by cash
+        Payment p;
 
         p = new CreditPayment();
-        p.pay(); // Pay by creditcard
+        p.pay(); // THis is a credi payment;
+        p = new CashPayment();
+
+        p.pay(); // This is a cash payment
+
     }
 
 }
@@ -71,6 +80,9 @@ class CashPayment implements Payment {
     public void pay() {
         System.out.println("This is cash payment");
     }
+
+
+
 
 }
 

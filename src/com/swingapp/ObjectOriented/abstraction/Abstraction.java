@@ -73,6 +73,15 @@ public class Abstraction {
 
     public static void main(String[] args) {
 
+
+
+        FullTimeEmployee fulltimeEmp = new FullTimeEmployee("",234);
+
+
+
+
+
+
         Person p1 = new Person();
         p1.setName("PersonName");
         /*
@@ -84,5 +93,8 @@ public class Abstraction {
         // p1.sayHello(); // You can't access this method, as it is private to Person
 
         System.out.println("Person 1 - " + p1.getId() + " : " + p1.getName());
+
+
+
     }
 }

@@ -59,14 +59,24 @@ class Animal {
  */
 class Dog extends Animal {
 
-    // Own behavior
-    private void bark() {
-        System.out.println("Dog '" + getId() + "' is barking");
-    }
+//    // Own behavior
+//    private void bark() {
+//        System.out.println("Dog '" + getId() + "' is barking");
+//    }
+//
+//    // Overriding super class behavior
+//    @Override
+//    public void sound() {
+//        bark();
+//    }
+}
 
-    // Overriding super class behavior
-    @Override
-    public void sound() {
-        bark();
+
+class test{
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.sound();
+
+        Animal animal = new Animal();
     }
 }
